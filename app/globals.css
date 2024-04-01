@@ -1,0 +1,99 @@
+@tailwind base; 
+/*  Import the base styles from Tailwind CSS */
+ @tailwind components; /* Import the components styles from Tailwind CSS */
+@tailwind utilities; /* Import the utilities styles from Tailwind CSS*/
+
+/*************************************/
+/* Set up root variables               */
+/*************************************/
+
+:root {
+  --foreground-rgb: 0, 0, 0; 
+  /* // Set the default foreground color to black */
+  --background-start-rgb: 214, 219, 220; 
+  /* // Set the default background start color to light gray */
+  --background-end-rgb: 255, 255, 255; 
+  /* // Set the default background end color to white */
+}
+
+/*************************************/
+/* Set up dark mode variables          */
+/*************************************/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; 
+    /* Set the foreground color to white in dark mode */
+    --background-start-rgb: 0, 0, 0; 
+    /* // Set the background start color to black in dark mode */
+    --background-end-rgb: 0, 0, 0; 
+    /* // Set the background end color to black in dark mode */
+  }
+}
+
+/*************************************/
+/* Set up body styles                 */
+/*************************************/
+
+body {
+  background-color: #181818; 
+  /* // Set the background color to dark gray */
+
+  font-size: 17px; 
+  /* // Set the font size to 17px */
+  color: #fff; 
+  /* // Set the text color to white */
+
+  height: 100vh; 
+  /* // Set the height of the body to 100vh */
+}
+
+/*************************************/
+/* Set up input, textarea, and button  */
+/* styles                               */
+/*************************************/
+
+input,
+textarea,
+button {
+  border: none; 
+  /* // Remove the border */
+  outline: none; 
+  /* // Remove the outline */
+  background: transparent; 
+  /* // Set the background to transparent */
+}
+
+/*************************************/
+/* Set up date input styles           */
+/*************************************/
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+  /* // Invert the color of the calendar picker indicator */
+  font-size: 1.5rem; 
+  /* // Set the font size to 1.5rem */
+  cursor: pointer; 
+  /* // Set the cursor to pointer */
+}
+
+/*************************************/
+/* Set up checkbox styles            */
+/*************************************/
+
+input[type="checkbox"] {
+  width: 1.5rem; 
+  /* // Set the width to 1.5rem */
+  height: 1.5rem; 
+  /* // Set the height to 1.5rem */
+  cursor: pointer; /
+  /* // Set the cursor to pointer */
+}
+
+/*************************************/
+/* Set up loader styles               */
+/*************************************/
+
+.loader {
+  width: 48px; }
+  /* /* // Set the width to 48px <|uniquepadding7|>  */
